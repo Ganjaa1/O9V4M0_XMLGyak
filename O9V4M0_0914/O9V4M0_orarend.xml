@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JMT_orarend>
+    <ora id="1" tipus="elmelet">
+        <targy>Valószínűség számítás</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>8</tol>
+            <ig>10</ig>
+        </idopont>
+        <helyszin>A1/5</helyszin>
+        <oktato>Dr. Fegyverneki Sándor</oktato>
+        <szak>BP3G1</szak>
+    </ora>
+    <ora id="2" tipus="elmelet">
+        <targy>Webtechnológiák 1</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>8</tol>
+            <ig>10</ig>
+        </idopont>
+        <helyszin>A1/III</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>BP3G1</szak>
+    </ora>
+    <ora id="3" tipus="gyakorlat">
+        <targy>Webtechnológiák 1</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>Inf/201</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>BP3G1</szak>
+    </ora>
+    <ora id="4" tipus="gyakorlat">
+        <targy>Webtechnológiák 1</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>Inf/201</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>BP3G1</szak>
+    </ora>
+    <ora id="5" tipus="elmelet">
+        <targy>Mesterséges Intelligencia</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>9</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>A1/II</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>BP3G1</szak>
+    </ora>
+    <ora id="6" tipus="elmelet">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>A1/XXXII</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>BP3G1</szak>
+    </ora>
+    <ora id="7" tipus="gyakorlat">
+        <targy>Mesterséges Intelligencia</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>9</tol>
+            <ig>10</ig>
+        </idopont>
+        <helyszin>Inf/101</helyszin>
+        <oktato>Fazekas Levente</oktato>
+        <szak>BP3G1</szak>
+    </ora>
+    <ora id="8" tipus="gyakorlat">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>Inf/101</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>BP3G1</szak>
+    </ora>
+</JMT_orarend>
