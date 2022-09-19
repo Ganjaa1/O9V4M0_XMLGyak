@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konferencia id="txn_nxm_2as">
+    <cim id="txn_nxm_2as">3515 Miskolc-Egyetemváros</cim>
+    <helyszin id="txn_nxm_2as">III előadó</helyszin>
+    <datum id="txn_nxm_2as">2022.09.14.</datum>
+    <hallgatok id="txn_nxm_2as">
+        <hallgato>
+            <nev>Juhász Marcell Tibor</nev>
+            <lakcim>Ismeretlen</lakcim>
+        </hallgato>
+    </hallgatok>
+    <eloado id="txn_nxm_2as">
+        <nev>Rektor asszony</nev>
+        <adoszam>12345678910</adoszam>
+        <lakcim>3515 Miskolc-Egyetemváros</lakcim>
+    </eloado>
+</konferencia>
