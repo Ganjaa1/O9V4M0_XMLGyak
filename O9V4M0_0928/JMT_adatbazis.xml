@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE JMT_adatbazis SYSTEM "JMT_adatbazis.dtd">
+ <JMT_adatbazis>
+  <dolgozo kod="do001">
+    <nev>Kiss László</nev>
+    <fizetes>154000</fizetes>
+  </dolgozo>
+  <dolgozo kod="do002">
+    <nev>Korda György</nev>
+    <fizetes>4812000</fizetes>
+  </dolgozo>
+  <dolgozo kod="do003">
+    <nev>Halász Balázs</nev>
+    <fizetes>225000</fizetes>
+  </dolgozo>
+  <dolgozo kod="do004">
+    <nev>Pista Gergely</nev>
+    <fizetes>7350300</fizetes>
+  </dolgozo>
+ </JMT_adatbazis>

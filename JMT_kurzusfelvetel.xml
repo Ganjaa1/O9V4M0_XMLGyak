@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE JMT_kurzusfelvetel SYSTEM "JMT_kurzusfelvetel.dtd">
+
+<JMT_kurzusfelvetel tanev="2022_2023 I." egyetem="ME">
+  <hallgato id="O9V4M0.ME">
+    <hnev>Juhász Marcell Tibor</hnev>
+    <szulev>2001-12-13</szulev>
+    <szak evf="5"> Programtervező Informatikus </szak>
+  </hallgato>
+
+  <kurzusok>
+      <kurzus id="GEIAL332-B">
+          <kurzusnev>Adatkezelés XML környezetben</kurzusnev>
+          <kredit>5</kredit>
+          <hely>XXXII.</hely>
+          <idopont>Kedd 12:00-13:30</idopont>
+          <oktato>Dr. Bednarik László</oktato>
+      </kurzus>
+    <kurzus id="GEIAL331-B" nyelv="angol">
+      <kurzusnev>WEB technológiák 1</kurzusnev>
+      <kredit>5</kredit>
+      <hely>A1. 315</hely>
+      <idopont>Hétfő 8:00-9:30</idopont>
+      <oktato>Agárdi Anita</oktato>
+    </kurzus>
+    <kurzus id="GEMAK234-B" jovahagyas="igen">
+        <kurzusnev>Algoritmusok és vizsgálatuk</kurzusnev>
+        <kredit>5</kredit>
+        <hely>A1. 216</hely>
+        <idopont>Kedd 14:00-17:00</idopont>
+        <oktato>Dr. Házy Attila</oktato>
+    </kurzus>
+    <kurzus id="GEIAL315-B">
+      <kurzusnev>Vállalit Információs Rendszerek Fejlesztése</kurzusnev>
+      <kredit>5</kredit>
+      <hely>In. 103</hely>
+      <idopont>Szerda 16:00-19:00</idopont>
+      <oktato>Dr. Sasvári Péter</oktato>
+    </kurzus>
+  </kurzusok>
+</JMT_kurzusfelvetel>
