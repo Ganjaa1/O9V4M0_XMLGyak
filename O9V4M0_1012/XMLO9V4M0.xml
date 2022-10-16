@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNameSpaceSchemaLocation="XMLSchemaO9V4M0.xsd">
+
+    <!-- Éttermek -->
+    <etterem ekod="e1">
+        <nev>Trófea</nev>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Visegradi</utca>
+            <hazszam>13</hazszam>
+        </cim>
+        <csillag>4</csillag>
+    </etterem>
+
+    <etterem ekod="e2">
+        <nev>Végállomás Étterem</nev>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Dorottya</utca>
+            <hazszam>1</hazszam>
+        </cim>
+        <csillag>4</csillag>
+    </etterem>
+
+    <etterem ekod="e3">
+        <nev>Creppy Palacsintaház</nev>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Mélyvölgy</utca>
+            <hazszam>210</hazszam>
+        </cim>
+        <csillag>3</csillag>
+    </etterem>
+
+    <!-- Főszakácsok -->
+    <foszakacs fkod="f1" e_f="e1">
+        <nev>Havas Péter</nev>
+        <eletkor>35</eletkor>
+        <vegzettseg>Szakközépiskola</vegzettseg>
+        <vegzettseg>Institute Paul Bocuse</vegzettseg>
+    </foszakacs>
+
+    <foszakacs fkod="f2" e_f="e2">
+        <nev>Kiss László</nev>
+        <eletkor>32</eletkor>
+        <vegzettseg>Gimnázium</vegzettseg>
+        <vegzettseg>Szakközép</vegzettseg>
+    </foszakacs>
+
+    <foszakacs fkod="f3" e_f="e3">
+        <nev>Nagy Fanni</nev>
+        <eletkor>31</eletkor>
+        <vegzettseg>Gimnázium</vegzettseg>
+        <vegzettseg>Egyetem</vegzettseg>
+    </foszakacs>
+
+    <!-- Szakácsok -->
+    <szakacs szkod="sz1" e_sz="e1">
+        <nev>Béka Bence</nev>
+        <reszleg>Sütő</reszleg>
+        <vegzettseg>Szakközépiskola</vegzettseg>
+    </szakacs>
+
+    <szakacs szkod="sz2" e_sz="e2">
+        <nev>Erdő Mester</nev>
+        <reszleg>Kukta</reszleg>
+        <vegzettseg>Gimnázium</vegzettseg>
+    </szakacs>
+
+    <szakacs szkod="sz3" e_sz="e3">
+        <nev>Család Barát</nev>
+        <reszleg>Előkészítő</reszleg>
+        <vegzettseg>Szakközépiskola</vegzettseg>
+    </szakacs>
+
+    <!-- Gyakornokok -->
+    <gyakornok gykod="gy1" e_gy="e1">
+        <nev>Gyurma Elek</nev>
+        <gyakorlat>
+            <kezdete>2021.04.11</kezdete>
+            <idotartam>4 hónap</idotartam>
+        </gyakorlat>
+        <muszak>Délelőtt</muszak>
+    </gyakornok>
+
+    <gyakornok gykod="gy2" e_gy="e2">
+        <nev>Suszter Virág</nev>
+        <gyakorlat>
+            <kezdete>2022.04.01</kezdete>
+            <idotartam>6 hónap</idotartam>
+        </gyakorlat>
+        <muszak>Délelőtt</muszak>
+    </gyakornok>
+
+    <gyakornok gykod="gy3" e_gy="e3">
+        <nev>Kiss Bianka</nev>
+        <gyakorlat>
+            <kezdete>2022.11.21</kezdete>
+            <idotartam>1 év</idotartam>
+        </gyakorlat>
+        <muszak>Délután</muszak>
+    </gyakornok>
+
+    <!-- Vemdegek -->
+
+    <vendeg vkod="v1">
+        <nev>Lakatos Ferenc</nev>
+        <eletkor>25</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Kisfalvi</utca>
+            <hazszam>11</hazszam>
+        </cim>
+    </vendeg>
+
+    <vendeg vkod="v2">
+        <nev>Lakatos Bioncé</nev>
+        <eletkor>54</eletkor>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Váci</utca>
+            <hazszam>41</hazszam>
+        </cim>
+    </vendeg>
+
+    <vendeg vkod="v3">
+        <nev>Dobos Ádám</nev>
+        <eletkor>30</eletkor>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Szent Ferenc</utca>
+            <hazszam>5</hazszam>
+        </cim>
+    </vendeg>
+
+    <!-- Rendelések -->
+    <rendeles e_v_e="el" e_v_v="v1">
+        <osszeg>15000</osszeg>
+        <etel>Gundel palacsinta</etel>
+    </rendeles>
+
+     <rendeles e_v_e="e2" e_v_v="v2">
+        <osszeg>5000</osszeg>
+        <etel>Szűzérme</etel>
+    </rendeles>
+
+     <rendeles e_v_e="e3" e_v_v="v3">
+        <osszeg>4000</osszeg>
+        <etel>GulyásLeves</etel>
+    </rendeles>
+
+</vendeglatas>
