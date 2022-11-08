@@ -1,0 +1,60 @@
+package SaxO9V4M0;
+
+import org.xml.sax.Attributes;
+import org.xml.sax.helpers.DefaultHandler;
+
+class SaxHandler extends DefaultHandler
+{
+    private int indent;
+    
+    SaxHandler() {
+        this.indent = 0;
+    }
+    
+    private String formatAttributes(final Attributes attributes) {
+        final int attLength = attributes.getLength();
+        if (attLength == 0) {
+            return "";
+        }
+        final StringBuilder sb = new StringBuilder(", {");
+        for (int i = 0; i < attLength; ++i) {
+            sb.append(String.valueOf(attributes.getLocalName(i)) + "=" + attributes.getValue(i));
+            if (i < attLength - 1) {
+                sb.append(", ");
+            }
+        }
+        sb.append("}");
+        return sb.toString();
+    }
+    
+    private void indent() {
+        for (int i = 0; i < this.indent; ++i) {
+            System.out.print("  ");
+        }
+    }
+    
+    @Override
+    public void startElement(final String uti, final String localName, final String qName, final Attributes attributes) {
+        ++this.indent;
+        this.indent();
+        System.out.println(String.valueOf(qName) + this.formatAttributes(attributes) + " start");
+    }
+    
+    @Override
+    public void endElement(final String uri, final String localName, final String qName) {
+        this.indent();
+        --this.indent;
+        System.out.println(String.valueOf(qName) + " end");
+    }
+    
+    @Override
+    public void characters(final char[] ch, final int start, final int length) {
+        final String chars = new String(ch, start, length).trim();
+        if (!chars.isEmpty()) {
+            ++this.indent;
+            this.indent();
+            --this.indent;
+            System.out.println(chars);
+        }
+    }
+}

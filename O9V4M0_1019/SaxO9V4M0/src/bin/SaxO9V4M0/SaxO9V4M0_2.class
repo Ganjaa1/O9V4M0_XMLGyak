@@ -1,0 +1,26 @@
+package SaxO9V4M0;
+
+import javax.xml.parsers.SAXParser;
+import java.io.IOException;
+import org.xml.sax.SAXException;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.helpers.DefaultHandler;
+import java.io.File;
+import javax.xml.parsers.SAXParserFactory;
+
+public class SaxY86I0I_2
+{
+    public static void main(final String[] args) {
+        try {
+            final SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
+            final SAXParser saxParser = saxParserFactory.newSAXParser();
+            final SaxHandler_2 handler = new SaxHandler_2();
+            saxParser.parse(new File("JMT_kurzusfelvetel.xml"), handler);
+        }
+        catch (ParserConfigurationException | SAXException | IOException ex2) {
+            final Exception ex;
+            final Exception e = ex;
+            e.printStackTrace();
+        }
+    }
+}
