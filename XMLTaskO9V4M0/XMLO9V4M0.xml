@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<egeszsegugy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNameSpaceSchemaLocation="XMLSchemaO9V4M0.xsd">
+    <bevetel BID="HID01">
+        <megnevezes>CT</megnevezes>
+        <osszeg>20000</osszeg>
+    </bevetel>
+    <bevetel BID="HID02">
+        <megnevezes>Ultrahang</megnevezes>
+        <osszeg>22000</osszeg>
+    </bevetel>
+    <bevetel BID="HID03">
+        <megnevezes>Mammográfia</megnevezes>
+        <osszeg>15780</osszeg>
+    </bevetel>
+
+    <hatarido_naplo HID="HID01">
+        <bevetel>20000</bevetel>
+        <paciens>
+            <nev>Kiss Gyurkó</nev>
+            <TAJszam>5684138744532</TAJszam>
+            <Szul_ido>1985.05.06.</Szul_ido>
+            <telefonszam>36208541254</telefonszam>
+        </paciens>
+        <idopont>2022.08.12.</idopont>
+        <szakorv>1</szakorv>
+        <szakrend>1</szakrend>
+    </hatarido_naplo>
+    <hatarido_naplo HID="HID02">
+        <bevetel>22000</bevetel>
+        <paciens>
+            <nev>Szakosné Dorina</nev>
+            <TAJszam>84571218574</TAJszam>
+            <Szul_ido>1993.02.08.</Szul_ido>
+            <telefonszam>3670854128</telefonszam>
+        </paciens>
+        <idopont>2022.08.15.</idopont>
+        <szakorv>2</szakorv>
+        <szakrend>2</szakrend>
+    </hatarido_naplo>
+    <hatarido_naplo HID="HID03">
+        <bevetel>15780</bevetel>
+        <paciens>
+            <nev>Ferencné Marianna</nev>
+            <TAJszam>23654178</TAJszam>
+            <Szul_ido>1958.12.31.</Szul_ido>
+            <telefonszam>3630541254</telefonszam>
+        </paciens>
+        <idopont>2022.09.01.</idopont>
+        <szakorv>3</szakorv>
+        <szakrend>3</szakrend>
+    </hatarido_naplo>
+
+    <rendeles RID="HID01">
+        <idopont>2022.08.12.</idopont>
+    </rendeles>
+    <rendeles RID="HID02">
+        <idopont>2022.08.15.</idopont>
+    </rendeles>
+    <rendeles RID="HID03">
+        <idopont>2022.09.01.</idopont>
+    </rendeles>
+
+    <szakrendeles SZID="SZID01">
+        <Sznev>CT</Sznev>
+        <Szter>1</Szter>
+    </szakrendeles>
+    <szakrendeles SZID="SZID02">
+        <Sznev>Ultrahang</Sznev>
+        <Szter>2</Szter>
+    </szakrendeles>
+    <szakrendeles SZID="SZID03">
+        <Sznev>Mammográfia</Sznev>
+        <Szter>3</Szter>
+    </szakrendeles>
+
+    <orvosok OrvID="ORV1">
+        <orvos>
+            <nev>Dr. Nagy Béla</nev>
+            <Szul_ido>1958.03.12.</Szul_ido>
+            <TAJszam>123456789</TAJszam>
+            <Telefonszam>36504125412</Telefonszam>
+        </orvos>
+        <szakter>1</szakter>
+    </orvosok>
+    <orvosok OrvID="ORV2">
+        <orvos>
+            <nev>Dr. Kiss Ferencné</nev>
+            <Szul_ido>1976.11.23.</Szul_ido>
+            <TAJszam>52416387</TAJszam>
+            <Telefonszam>36205244156</Telefonszam>
+        </orvos>
+        <szakter>2</szakter>
+    </orvosok>
+    <orvosok OrvID="ORV3">
+        <orvos>
+            <nev>Dr. Kiss Ferenc</nev>
+            <Szul_ido>1974.10.21.</Szul_ido>
+            <TAJszam>976431824</TAJszam>
+            <Telefonszam>36305426457</Telefonszam>
+        </orvos>
+        <szakter>3</szakter>
+    </orvosok>
+
+    <dolgozik DID="ORV1">
+        <munkaido>8</munkaido>
+        <fizetes>56000</fizetes>
+    </dolgozik>
+    <dolgozik DID="ORV2">
+        <munkaido>4</munkaido>
+        <fizetes>65300</fizetes>
+    </dolgozik>
+    <dolgozik DID="ORV3">
+        <munkaido>12</munkaido>
+        <fizetes>98000</fizetes>
+    </dolgozik>
+
+    <teljesitmeny_igazolas TID="TID01">
+        <datum>2022.08.12.</datum>
+        <fizetes>56000</fizetes>
+        <orvos>1</orvos>
+    </teljesitmeny_igazolas>
+    <teljesitmeny_igazolas TID="TID02">
+        <datum>2022.08.15.</datum>
+        <fizetes>65300</fizetes>
+        <orvos>2</orvos>
+    </teljesitmeny_igazolas>
+    <teljesitmeny_igazolas TID="TID03">
+        <datum>2022.08.12.</datum>
+        <fizetes>98000</fizetes>
+        <orvos>3</orvos>
+    </teljesitmeny_igazolas>
+
+    <kiadas KID="TID01">
+        <megnevezes>orvosbér</megnevezes>
+        <osszeg>56000</osszeg>
+    </kiadas>
+    <kiadas KID="TID02">
+        <megnevezes>orvosbér</megnevezes>
+        <osszeg>65300</osszeg>
+    </kiadas>
+    <kiadas KID="TID03">
+        <megnevezes>orvosbér</megnevezes>
+        <osszeg>98000</osszeg>
+    </kiadas>
+    <kiadas KID="RID01">
+        <megnevezes>felszerelés</megnevezes>
+        <osszeg>12000</osszeg>
+    </kiadas>
+    <kiadas KID="RID02">
+        <megnevezes>ételrendelés</megnevezes>
+        <osszeg>35000</osszeg>
+    </kiadas>
+
+    <megrendelesek RID="RID01">
+        <datum>2022.09.05.</datum>
+        <darab>1</darab>
+        <megnevezes>Gumikesztyű</megnevezes>
+        <penzkiadas>12000</penzkiadas>
+    </megrendelesek>
+    <megrendelesek RID="RID02">
+        <datum>2022.09.06.</datum>
+        <darab>4</darab>
+        <megnevezes>Pizza</megnevezes>
+        <penzkiadas>35000</penzkiadas>
+    </megrendelesek>
+
+    <penzugy PID="PID01">
+        <megnevezes>TID01</megnevezes>
+        <osszeg>56000</osszeg>
+    </penzugy>
+    <penzugy PID="HID02">
+        <megnevezes>Bevétel</megnevezes>
+        <osszeg>22000</osszeg>
+    </penzugy>
+</egeszsegugy>
