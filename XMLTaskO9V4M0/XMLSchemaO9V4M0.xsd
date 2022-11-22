@@ -1,120 +1,118 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="egeszsegugy">
     <xs:complexType>
       <xs:sequence>
-        <xs:element maxOccurs="unbounded" name="bevetel">
+        <xs:element name="bevetel" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="megnevezes" type="xs:string" />
-              <xs:element name="osszeg" type="xs:unsignedShort" />
+              <xs:element type="xs:string" name="megnevezes"/>
+              <xs:element type="xs:short" name="osszeg"/>
             </xs:sequence>
-            <xs:attribute name="BID" type="xs:string" use="required" />
+            <xs:attribute type="xs:string" name="BID" use="optional"/>
           </xs:complexType>
         </xs:element>
-        <xs:element maxOccurs="unbounded" name="hatarido_naplo">
+        <xs:element name="hatarido_naplo" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="bevetel" type="xs:unsignedShort" />
+              <xs:element type="xs:short" name="bevetel"/>
               <xs:element name="paciens">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="nev" type="xs:string" />
-                    <xs:element name="TAJszam" type="xs:unsignedLong" />
-                    <xs:element name="Szul_ido" type="xs:string" />
-                    <xs:element name="telefonszam" type="xs:unsignedLong" />
+                    <xs:element type="xs:string" name="nev"/>
+                    <xs:element type="xs:long" name="TAJszam"/>
+                    <xs:element type="xs:string" name="Szul_ido"/>
+                    <xs:element type="xs:long" name="telefonszam"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="idopont" type="xs:string" />
-              <xs:element name="szakorv" type="xs:unsignedByte" />
-              <xs:element name="szakrend" type="xs:unsignedByte" />
+              <xs:element type="xs:string" name="idopont"/>
+              <xs:element type="xs:byte" name="szakorv"/>
+              <xs:element type="xs:byte" name="szakrend"/>
             </xs:sequence>
-            <xs:attribute name="HID" type="xs:string" use="required" />
+            <xs:attribute type="xs:string" name="HID" use="optional"/>
           </xs:complexType>
         </xs:element>
-        <xs:element maxOccurs="unbounded" name="rendeles">
+        <xs:element name="rendeles" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="idopont" type="xs:string" />
+              <xs:element type="xs:string" name="idopont"/>
             </xs:sequence>
-            <xs:attribute name="RID" type="xs:string" use="required" />
+            <xs:attribute type="xs:string" name="RID" use="optional"/>
           </xs:complexType>
         </xs:element>
-        <xs:element maxOccurs="unbounded" name="szakrendeles">
+        <xs:element name="szakrendeles" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Sznev" type="xs:string" />
-              <xs:element name="Szter" type="xs:unsignedByte" />
+              <xs:element type="xs:string" name="Sznev"/>
+              <xs:element type="xs:byte" name="Szter"/>
             </xs:sequence>
-            <xs:attribute name="SZID" type="xs:string" use="required" />
+            <xs:attribute type="xs:string" name="SZID" use="optional"/>
           </xs:complexType>
         </xs:element>
-        <xs:element maxOccurs="unbounded" name="orvosok">
+        <xs:element name="orvosok" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="orvos">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="nev" type="xs:string" />
-                    <xs:element name="Szul_ido" type="xs:string" />
-                    <xs:element name="TAJszam" type="xs:unsignedInt" />
-                    <xs:element name="Telefonszam" type="xs:unsignedLong" />
+                    <xs:element type="xs:string" name="nev"/>
+                    <xs:element type="xs:string" name="Szul_ido"/>
+                    <xs:element type="xs:int" name="TAJszam"/>
+                    <xs:element type="xs:long" name="Telefonszam"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="szakter" type="xs:unsignedByte" />
+              <xs:element type="xs:byte" name="szakter"/>
             </xs:sequence>
-            <xs:attribute name="OrvID" type="xs:string" use="required" />
+            <xs:attribute type="xs:string" name="OrvID" use="optional"/>
           </xs:complexType>
         </xs:element>
-        <xs:element maxOccurs="unbounded" name="dolgozik">
+        <xs:element name="dolgozik" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="munkaido" type="xs:unsignedByte" />
-              <xs:element name="fizetes" type="xs:unsignedInt" />
+              <xs:element type="xs:byte" name="munkaido"/>
+              <xs:element type="xs:int" name="fizetes"/>
             </xs:sequence>
-            <xs:attribute name="DID" type="xs:string" use="required" />
+            <xs:attribute type="xs:string" name="DID" use="optional"/>
           </xs:complexType>
         </xs:element>
-        <xs:element maxOccurs="unbounded" name="teljesitmeny_igazolas">
+        <xs:element name="teljesitmeny_igazolas" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="datum" type="xs:string" />
-              <xs:element name="fizetes" type="xs:unsignedInt" />
-              <xs:element name="orvos" type="xs:unsignedByte" />
+              <xs:element type="xs:string" name="datum"/>
+              <xs:element type="xs:int" name="fizetes"/>
+              <xs:element type="xs:byte" name="orvos"/>
             </xs:sequence>
-            <xs:attribute name="TID" type="xs:string" use="required" />
+            <xs:attribute type="xs:string" name="TID" use="optional"/>
           </xs:complexType>
         </xs:element>
-        <xs:element maxOccurs="unbounded" name="kiadas">
+        <xs:element name="kiadas" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="megnevezes" type="xs:string" />
-              <xs:element name="osszeg" type="xs:unsignedInt" />
+              <xs:element type="xs:string" name="megnevezes"/>
+              <xs:element type="xs:int" name="osszeg"/>
             </xs:sequence>
-            <xs:attribute name="KID" type="xs:string" use="required" />
+            <xs:attribute type="xs:string" name="KID" use="optional"/>
           </xs:complexType>
         </xs:element>
-        <xs:element maxOccurs="unbounded" name="megrendelesek">
+        <xs:element name="megrendelesek" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="datum" type="xs:string" />
-              <xs:element name="darab" type="xs:unsignedByte" />
-              <xs:element name="megnevezes" type="xs:string" />
-              <xs:element name="penzkiadas" type="xs:unsignedShort" />
+              <xs:element type="xs:string" name="datum"/>
+              <xs:element type="xs:byte" name="darab"/>
+              <xs:element type="xs:string" name="megnevezes"/>
+              <xs:element type="xs:int" name="penzkiadas"/>
             </xs:sequence>
-            <xs:attribute name="RID" type="xs:string" use="required" />
+            <xs:attribute type="xs:string" name="RID" use="optional"/>
           </xs:complexType>
         </xs:element>
-        <xs:element maxOccurs="unbounded" name="penzugy">
+        <xs:element name="penzugy" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="megnevezes" type="xs:string" />
-              <xs:element name="osszeg" type="xs:unsignedShort" />
+              <xs:element type="xs:string" name="megnevezes"/>
+              <xs:element type="xs:int" name="osszeg"/>
             </xs:sequence>
-            <xs:attribute name="PID" type="xs:string" use="required" />
+            <xs:attribute type="xs:string" name="PID" use="optional"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
