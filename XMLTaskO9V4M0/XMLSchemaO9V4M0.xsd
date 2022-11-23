@@ -2,6 +2,7 @@
   <xs:element name="egeszsegugy">
     <xs:complexType>
       <xs:sequence>
+        
         <xs:element name="bevetel" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
@@ -11,6 +12,7 @@
             <xs:attribute type="xs:string" name="BID" use="optional"/>
           </xs:complexType>
         </xs:element>
+        
         <xs:element name="hatarido_naplo" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
@@ -32,6 +34,7 @@
             <xs:attribute type="xs:string" name="HID" use="optional"/>
           </xs:complexType>
         </xs:element>
+        
         <xs:element name="rendeles" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
@@ -40,6 +43,7 @@
             <xs:attribute type="xs:string" name="RID" use="optional"/>
           </xs:complexType>
         </xs:element>
+        
         <xs:element name="szakrendeles" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
@@ -49,6 +53,7 @@
             <xs:attribute type="xs:string" name="SZID" use="optional"/>
           </xs:complexType>
         </xs:element>
+        
         <xs:element name="orvosok" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
@@ -67,6 +72,7 @@
             <xs:attribute type="xs:string" name="OrvID" use="optional"/>
           </xs:complexType>
         </xs:element>
+        
         <xs:element name="dolgozik" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
@@ -76,6 +82,7 @@
             <xs:attribute type="xs:string" name="DID" use="optional"/>
           </xs:complexType>
         </xs:element>
+        
         <xs:element name="teljesitmeny_igazolas" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
@@ -86,6 +93,7 @@
             <xs:attribute type="xs:string" name="TID" use="optional"/>
           </xs:complexType>
         </xs:element>
+        
         <xs:element name="kiadas" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
@@ -95,6 +103,7 @@
             <xs:attribute type="xs:string" name="KID" use="optional"/>
           </xs:complexType>
         </xs:element>
+        
         <xs:element name="megrendelesek" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
@@ -106,6 +115,7 @@
             <xs:attribute type="xs:string" name="RID" use="optional"/>
           </xs:complexType>
         </xs:element>
+        
         <xs:element name="penzugy" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
