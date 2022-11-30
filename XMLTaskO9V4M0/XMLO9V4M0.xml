@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <egeszsegugy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNameSpaceSchemaLocation="XMLSchemaO9V4M0.xsd">
-    <bevetel BID="HID01">
+    <bevetel BID="BID01" HID="HID01">
         <megnevezes>CT</megnevezes>
         <osszeg>20000</osszeg>
     </bevetel>
-    <bevetel BID="HID02">
+    <bevetel BID="BID02" HID="HID01">
         <megnevezes>Ultrahang</megnevezes>
         <osszeg>22000</osszeg>
     </bevetel>
-    <bevetel BID="HID03">
+    <bevetel BID="BID03" HID="HID01">
         <megnevezes>Mammográfia</megnevezes>
         <osszeg>15780</osszeg>
     </bevetel>
