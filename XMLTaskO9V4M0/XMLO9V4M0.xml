@@ -148,15 +148,15 @@
 
     <kiadas KID="KID01" TID="TID01">
         <megnevezes>orvosbér</megnevezes>
-        <osszeg>56000</osszeg>
+        <fizetes>56000</fizetes>
     </kiadas>
     <kiadas KID="KID02" TID="TID02">
         <megnevezes>orvosbér</megnevezes>
-        <osszeg>65300</osszeg>
+        <fizetes>65300</fizetes>
     </kiadas>
-    <kiadas KID="kID03" TID="TID03">
+    <kiadas KID="KID03" TID="TID03">
         <megnevezes>orvosbér</megnevezes>
-        <osszeg>98000</osszeg>
+        <fizetes>98000</fizetes>
     </kiadas>
     <kiadas KID="KID04" RID="RID01">
         <megnevezes>felszerelés</megnevezes>
