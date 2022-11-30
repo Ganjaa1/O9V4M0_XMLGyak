@@ -50,6 +50,18 @@
         <szakorv>3</szakorv>
         <szakrend>3</szakrend>
     </hatarido_naplo>
+    <hatarido_naplo HID="HID04">
+        <bevetel>35600</bevetel>
+        <paciens>
+            <nev>Kiss Gézáné</nev>
+            <TAJszam>47854123</TAJszam>
+            <Szul_ido>1962.03.24.</Szul_ido>
+            <telefonszam>3620854125</telefonszam>
+        </paciens>
+        <idopont>2022.09.02.</idopont>
+        <szakorv>3</szakorv>
+        <szakrend>3</szakrend>
+    </hatarido_naplo>
 
     <rendeles RID="HID01">
         <idopont>2022.08.12.</idopont>
@@ -59,6 +71,9 @@
     </rendeles>
     <rendeles RID="HID03">
         <idopont>2022.09.01.</idopont>
+    </rendeles>
+    <rendeles RID="HID04">
+        <idopont>2022.09.02.</idopont>
     </rendeles>
 
     <szakrendeles SZID="SZID01">
