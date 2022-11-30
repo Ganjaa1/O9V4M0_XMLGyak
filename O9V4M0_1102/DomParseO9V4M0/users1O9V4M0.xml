@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users xmlns="DOMO9V4M0">
+  <user id="1">
+    <firstname>Heves</firstname>
+    <lastname>Gyula</lastname>
+    <profession>Gyula</profession>
+  </user>
+  <user id="2">
+    <firstname>Nagy</firstname>
+    <lastname>Piroska</lastname>
+    <profession>Piroska</profession>
+  </user>
+  <user id="3">
+    <firstname>Kedves</firstname>
+    <lastname>Leves</lastname>
+    <profession>Boros</profession>
+  </user>
+</users>
