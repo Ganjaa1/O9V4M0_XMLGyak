@@ -117,15 +117,15 @@
         <szakter>3</szakter>
     </orvosok>
 
-    <dolgozik DID="ORV1">
+    <dolgozik DID="DID01" OrvID="ORV1">
         <munkaido>8</munkaido>
         <fizetes>56000</fizetes>
     </dolgozik>
-    <dolgozik DID="ORV2">
+    <dolgozik DID="DID02" OrvID="ORV2">
         <munkaido>4</munkaido>
         <fizetes>65300</fizetes>
     </dolgozik>
-    <dolgozik DID="ORV3">
+    <dolgozik DID="DID03" OrvID="ORV3">
         <munkaido>12</munkaido>
         <fizetes>98000</fizetes>
     </dolgozik>
