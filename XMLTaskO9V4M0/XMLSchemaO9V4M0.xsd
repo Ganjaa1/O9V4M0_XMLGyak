@@ -1,131 +1,161 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="egeszsegugy">
-    <xs:complexType>
-      <xs:sequence>
-        
-        <xs:element name="bevetel" maxOccurs="unbounded" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element type="xs:string" name="megnevezes"/>
-              <xs:element type="xs:short" name="osszeg"/>
-            </xs:sequence>
-            <xs:attribute type="xs:string" name="BID" use="optional"/>
-          </xs:complexType>
-        </xs:element>
-        
-        <xs:element name="hatarido_naplo" maxOccurs="unbounded" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element type="xs:short" name="bevetel"/>
-              <xs:element name="paciens">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element type="xs:string" name="nev"/>
-                    <xs:element type="xs:long" name="TAJszam"/>
-                    <xs:element type="xs:string" name="Szul_ido"/>
-                    <xs:element type="xs:long" name="telefonszam"/>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element type="xs:string" name="idopont"/>
-              <xs:element type="xs:byte" name="szakorv"/>
-              <xs:element type="xs:byte" name="szakrend"/>
-            </xs:sequence>
-            <xs:attribute type="xs:string" name="HID" use="optional"/>
-          </xs:complexType>
-        </xs:element>
-        
-        <xs:element name="rendeles" maxOccurs="unbounded" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element type="xs:string" name="idopont"/>
-            </xs:sequence>
-            <xs:attribute type="xs:string" name="RID" use="optional"/>
-          </xs:complexType>
-        </xs:element>
-        
-        <xs:element name="szakrendeles" maxOccurs="unbounded" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element type="xs:string" name="Sznev"/>
-              <xs:element type="xs:byte" name="Szter"/>
-            </xs:sequence>
-            <xs:attribute type="xs:string" name="SZID" use="optional"/>
-          </xs:complexType>
-        </xs:element>
-        
-        <xs:element name="orvosok" maxOccurs="unbounded" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="orvos">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element type="xs:string" name="nev"/>
-                    <xs:element type="xs:string" name="Szul_ido"/>
-                    <xs:element type="xs:int" name="TAJszam"/>
-                    <xs:element type="xs:long" name="Telefonszam"/>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element type="xs:byte" name="szakter"/>
-            </xs:sequence>
-            <xs:attribute type="xs:string" name="OrvID" use="optional"/>
-          </xs:complexType>
-        </xs:element>
-        
-        <xs:element name="dolgozik" maxOccurs="unbounded" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element type="xs:byte" name="munkaido"/>
-              <xs:element type="xs:int" name="fizetes"/>
-            </xs:sequence>
-            <xs:attribute type="xs:string" name="DID" use="optional"/>
-          </xs:complexType>
-        </xs:element>
-        
-        <xs:element name="teljesitmeny_igazolas" maxOccurs="unbounded" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element type="xs:string" name="datum"/>
-              <xs:element type="xs:int" name="fizetes"/>
-              <xs:element type="xs:byte" name="orvos"/>
-            </xs:sequence>
-            <xs:attribute type="xs:string" name="TID" use="optional"/>
-          </xs:complexType>
-        </xs:element>
-        
-        <xs:element name="kiadas" maxOccurs="unbounded" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element type="xs:string" name="megnevezes"/>
-              <xs:element type="xs:int" name="osszeg"/>
-            </xs:sequence>
-            <xs:attribute type="xs:string" name="KID" use="optional"/>
-          </xs:complexType>
-        </xs:element>
-        
-        <xs:element name="megrendelesek" maxOccurs="unbounded" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element type="xs:string" name="datum"/>
-              <xs:element type="xs:byte" name="darab"/>
-              <xs:element type="xs:string" name="megnevezes"/>
-              <xs:element type="xs:int" name="penzkiadas"/>
-            </xs:sequence>
-            <xs:attribute type="xs:string" name="RID" use="optional"/>
-          </xs:complexType>
-        </xs:element>
-        
-        <xs:element name="penzugy" maxOccurs="unbounded" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element type="xs:string" name="megnevezes"/>
-              <xs:element type="xs:int" name="osszeg"/>
-            </xs:sequence>
-            <xs:attribute type="xs:string" name="PID" use="optional"/>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
+  <xs:element name="egeszsegugy" type="egeszsegugyType"></xs:element>
+
+  <xs:complexType name="hatarido_naploType">
+    <xs:sequence>
+      <xs:element type="xs:int" name="bevetel" />
+      <xs:element name="paciens">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element type="xs:string" name="nev" />
+            <xs:element type="xs:long" name="TAJszam" />
+            <xs:element type="xs:string" name="Szul_ido" />
+            <xs:element type="xs:long" name="telefonszam" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element type="xs:string" name="idopont" />
+      <xs:element type="xs:int" name="szakorv" />
+      <xs:element type="xs:int" name="szakrend" />
+    </xs:sequence>
+    <xs:attribute ref="HID" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="szakrendelesType">
+    <xs:sequence>
+      <xs:element name="Sznev" type="xs:string" />
+      <xs:element name="Szter" type="xs:unsignedByte" />
+    </xs:sequence>
+    <xs:attribute ref="SZID" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="orvosokType">
+    <xs:sequence>
+      <xs:element name="orvos">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="nev" type="xs:string" />
+            <xs:element name="Szul_ido" type="xs:string" />
+            <xs:element name="TAJszam" type="xs:unsignedInt" />
+            <xs:element name="Telefonszam" type="xs:unsignedLong" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="szakter" type="xs:unsignedByte" />
+    </xs:sequence>
+    <xs:attribute ref="OrvID" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="teljesitmeny_igazolasType">
+    <xs:sequence>
+      <xs:element name="datum" type="xs:string" />
+      <xs:element name="fizetes" type="xs:unsignedInt" />
+      <xs:element name="orvos" type="xs:unsignedByte" />
+    </xs:sequence>
+    <xs:attribute ref="TID" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="megrendelesekType">
+    <xs:sequence>
+      <xs:element name="datum" type="xs:string" />
+      <xs:element name="darab" type="xs:unsignedByte" />
+      <xs:element name="megnevezes" type="xs:string" />
+      <xs:element name="penzkiadas" type="xs:unsignedShort" />
+    </xs:sequence>
+    <xs:attribute ref="RID" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="penzugyType">
+    <xs:sequence>
+      <xs:element name="megnevezes" type="xs:string" />
+      <xs:element name="osszeg" type="xs:unsignedShort" />
+    </xs:sequence>
+    <xs:attribute ref="PID" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="egeszsegugyType">
+    <xs:choice maxOccurs="unbounded" minOccurs="1">
+      <xs:element type="hatarido_naploType" name="hatarido_naplo" maxOccurs="unbounded" minOccurs="0"></xs:element>
+      <xs:element type="szakrendelesType" name="szakrendeles" maxOccurs="unbounded" minOccurs="0"></xs:element>
+      <xs:element type="orvosokType" name="orvosok" maxOccurs="unbounded" minOccurs="0"></xs:element>
+      <xs:element type="teljesitmeny_igazolasType" name="teljesitmeny_igazolas" maxOccurs="unbounded" minOccurs="0"></xs:element>
+      <xs:element type="megrendelesekType" name="megrendeles" maxOccurs="unbounded" minOccurs="0"></xs:element>
+      <xs:element type="penzugyType" name="penzugy" maxOccurs="unbounded" minOccurs="0"></xs:element>
+    </xs:choice>
+  </xs:complexType>
+
+
+  <!-- Attributes -->
+
+  <xs:attribute type="xs:string" name="HID" />
+  <xs:attribute type="xs:string" name="SZID" />
+  <xs:attribute type="xs:string" name="OrvID" />
+  <xs:attribute type="xs:string" name="TID" />
+  <xs:attribute type="xs:string" name="RID" />
+  <xs:attribute type="xs:string" name="PID" />
+
+  <!-- Kulcsok -->
+  <xs:element name="keys">
+    <xs:key name="HID">
+      <xs:selector xpath="hatarido_naplo"></xs:selector>
+      <xs:field xpath="@HID"></xs:field>
+    </xs:key>
+
+    <xs:key name="SZID">
+      <xs:selector xpath="szakrendeles"></xs:selector>
+      <xs:field xpath="@SZID"></xs:field>
+    </xs:key>
+
+    <xs:key name="OrvID">
+      <xs:selector xpath="orvosok"></xs:selector>
+      <xs:field xpath="@OrvID"></xs:field>
+    </xs:key>
+
+    <xs:key name="TID">
+      <xs:selector xpath="teljesitmeny_igazolas"></xs:selector>
+      <xs:field xpath="@TID"></xs:field>
+    </xs:key>
+
+    <xs:key name="RID">
+      <xs:selector xpath="megrendelesek"></xs:selector>
+      <xs:field xpath="@RID"></xs:field>
+    </xs:key>
+
+    <xs:key name="PID">
+      <xs:selector xpath="penzugy"></xs:selector>
+      <xs:field xpath="@PID"></xs:field>
+    </xs:key>
+
+    <xs:key name="BID">
+      <xs:selector xpath="bevetel"></xs:selector>
+      <xs:field xpath="@BID"></xs:field>
+    </xs:key>
+
+    <xs:key name="DID">
+      <xs:selector xpath="dolgozik"></xs:selector>
+      <xs:field xpath="@DID"></xs:field>
+    </xs:key>
+
+    <xs:key name="KID">
+      <xs:selector xpath="kiadas"></xs:selector>
+      <xs:field xpath="@KID"></xs:field>
+    </xs:key>
+
+    <!-- Idegen kulcsok -->
+    <xs:keyref refer="BID" name="bevetel">
+      <xs:selector xpath="hatarido_naplo"></xs:selector>
+      <xs:field xpath="@HID"></xs:field>
+    </xs:keyref>
+
+    <xs:keyref refer="DID" name="dolgozik">
+      <xs:selector xpath="orvosok"></xs:selector>
+      <xs:field xpath="@OrvID"></xs:field>
+    </xs:keyref>
+
+    <xs:keyref refer="KID" name="kiadas">
+      <xs:selector xpath="teljesitmeny_igazolas"></xs:selector>
+      <xs:field xpath="@TID"></xs:field>
+    </xs:keyref>
   </xs:element>
+
 </xs:schema>
