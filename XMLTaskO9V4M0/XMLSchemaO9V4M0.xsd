@@ -147,10 +147,10 @@
       <xs:field xpath="@HID"></xs:field>
     </xs:keyref>
 
-    <xs:keyref refer="DID" name="dolgozik">
+    <xs:unique refer="DID" name="dolgozik">
       <xs:selector xpath="orvosok"></xs:selector>
       <xs:field xpath="@OrvID"></xs:field>
-    </xs:keyref>
+    </xs:unique>
 
     <xs:keyref refer="KID" name="kiadas">
       <xs:selector xpath="teljesitmeny_igazolas"></xs:selector>
